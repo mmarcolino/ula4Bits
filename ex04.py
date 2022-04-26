@@ -5,6 +5,7 @@ def main():
     file = open("resultado.hex", "w")
     for i in listaDeComandos:
         file.write(i)
+        file.write('\n')
     file.close()
     
 #Função responsável por ler o arquvio
