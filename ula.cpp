@@ -20,16 +20,12 @@ void loop() {
     pos = process[0].toInt();
     if (pos == 0) {
       	process[0] = "4";
-      	process[1] = "0";
-  	  	process[2] = "0";
-  	  	process[3] = "0";
       	pos = 4;
     }
     
     if (mode.length() >= 3 && mode.equals("end") == 0) {
         process[pos] = mode;
       	addprocess();
-      	serialPrint(process, pos);
         
     } else {
       aux = process[0].toInt();
